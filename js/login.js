@@ -4,7 +4,7 @@ const correo = document.getElementById('correo');
 const contraseña = document.getElementById('contraseña');
 const ingrerBtn = document.getElementById('ingreBtn');
 
-ingrerBtn.addEventListener('click', ()=>{
+ingrerBtn.addEventListener('click', () =>{
 
     auth.signInWithEmailAndPassword(correo.value, contraseña.value).then(
 

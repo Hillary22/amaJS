@@ -7,26 +7,21 @@ const contraseña = document.getElementById('contraseña');
 const confirmacion = document.getElementById('confirmacion');
 const registrarBtn = document.getElementById('registrarBtn');
 
-
+ 
 registrarBtn.addEventListener('click', ()=>{
+ 
     auth.createUserWithEmailAndPassword(correo.value, contraseña.value).then(
         (data) =>{
-            let objetoU ={
+            let user ={
                 id: data.user.uid,
                 nombre: nombre.value,
                 ciudad: ciudad.value,
                 correo: correo.value,
-                contraseña: contraseña.value,
+                contraseña: contraseña.value
             }
-            database.ref('users/registrados/'+objetoU.id).set(objetoU);
-           
+            database.ref('users/registrados'+ user.id).set(user);
+                  
         }
 
-    ).then(function () {
-        window.location.href = 'login.html';
-    }).catch(
-        (error)=>{
-            alert(error.message);
-            console.log(error);}
-    );
+    ); 
 });
