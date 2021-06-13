@@ -9,7 +9,7 @@ ingrerBtn.addEventListener('click', ()=>{
     auth.signInWithEmailAndPassword(correo.value, contraseña.value).then(
 
         (data)=>{
-            window.location.href ="index.html";
+            window.location.href ='index.html';
         }
     ).catch(
         (error)=>{
