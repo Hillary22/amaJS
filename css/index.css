@@ -21,8 +21,16 @@ body{
 #subtitle{
     color:ivory;
     text-align: center;
-    font: 1em sans-serif;
+    font: 0.8em helvetica;
 }
+#irLogin{
+    border-top: 10%;
+    color:ivory;
+    text-align: center;
+    font: 0.8em helvetica;
+    font-size: small;
+    }
+
 
 #logoAma{
   
@@ -34,4 +42,16 @@ body{
     margin: 0 auto;
     padding: 20px;
     padding-top: 80px;
+}
+#loginContainer{
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+#subt{
+    color:ivory;
+    text-align: center;
+    font: 0.8em helvetica;
 }

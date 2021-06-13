@@ -8,7 +8,29 @@
     </head>
 
     <body>
-       
+        <!--imagen-->
+        <img id="logoAma" src="./img/logo.png " alt=""> 
+        <!--linkear archivo-->
+        <link rel="stylesheet" href="css/index.css">
+ 
+        <h3 id="subtitle">Crea tu cuenta</h3>
+        <div id="registroContainer">
+         
+ 
+            <!--edit text-->
+            <input id="nombre" placeholder="Nombre" type="text">
+            <input id="ciudad" placeholder="Ciudad" type="text">
+            <input id="correo" placeholder="Email" type="email">
+            <input id="contraseña" placeholder="Contraseña" type="password">
+            <input id="confirmacion" placeholder="Confirmar contraseña" type="password">
+ 
+ 
+           
+            <button id="registrarBtn">registrar</button>
+           
+         </div>
+         <div id="irLogin"><h6 id="login">¿Ya tienes una cuenta?</h6>  <a href="/login.html">Ingresar</a></div>
+ 
       
 
     </body>
@@ -17,7 +39,7 @@
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase.js"></script>
 
-    
+  
     <script>
       // Your web app's Firebase configuration
       // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -33,7 +55,7 @@
       };
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
-    
+     
     </script>
-    
-        <script src="js/index.js"></script>
+        
+        <script src="js/registro.js"></script>
