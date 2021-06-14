@@ -9,9 +9,12 @@
 
     <body>
       <header class="naveGlobalCont">
-        <div class="logoAma"><img src="./img/logo.png " alt=""> </div>
-     
-        <img id="usuarioVector" src="./img/userP.png " alt="">
+        
+        <div class="menu"></div> <img src="./img/mh.png " alt="" width="1.5%" height="1.5%"> </div>
+        <div class="logoAma"><img src="./img/logo (1).png " alt="" width="70%" height="70%"> </div>
+        <div class="usuarioVector"></div> <img src="./img/userr.png " alt="" width="3%" height="3%"> </div>
+ 
+      
       </header>
  
       <link rel="stylesheet" href="css/index.css">
@@ -27,8 +30,45 @@
         <img id="consejosI" src="./img/consejosI.png " alt="">
         <img id="reportarI" src="./img/reportarI.png " alt="">
         <img id="mapaI" src="./img/mapaI.png " alt="">
-       </div>
+      </div>
       
+      <!-- MENU HAMBURGUESA -->
+       <button class="hamburger hamburger--collapse" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <aside class="panel">
+        <nav class="menu">
+          <a href="#seccion1">Mapa</a>
+          <a href="#seccion2">Reportar</a>
+          <a href="#seccion3">Inicio</a>
+          <a href="#seccion4">Consejos</a>
+          <a href="#seccion5">Perfil</a>
+  
+        </nav>
+
+            </aside>
+
+            <main>
+              <section id="seccion1" class="section">
+                <h2>Mapa</h2>
+              </section>
+              <section id="seccion2" class="section">
+                <h2>Reportar</h2>
+              </section>
+              <section id="seccion3" class="section">
+                <h2>Inicio</h2>
+              </section>
+              <section id="seccion4" class="section">
+                <h2>Consejos</h2>
+              </section>
+              <section id="seccion5" class="section">
+                <h2>Perfil</h2>
+              </section>
+            </main>
+      
+
 
     </body>
 
@@ -54,5 +94,5 @@
       firebase.initializeApp(firebaseConfig);
     
     </script>
-    <script src="component/naveGlobal.js"></script>
+    
         <script src="js/index.js"></script>

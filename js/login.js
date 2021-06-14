@@ -9,7 +9,7 @@ ingreBtn.addEventListener('click', () =>{
     auth.signInWithEmailAndPassword(correo.value, contraseña.value).then(
 
         (data)=>{
-            window.location.href ='index.html';
+            window.location.href ='perfil.html';
         }
     ).catch(
         (error)=>{
