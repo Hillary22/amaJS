@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.title{
+    text-align: center;
+    background: #8ABAAE;
+    color: #006A4E;
+    padding: 1em;
+
+}
+#addBtn{
+    background-color: #2E856E;
+    color: #ffffff;
+    border-radius: 4px;
+    padding:0.7em 1.5em;
+    border: transparent;
+  
+}
