@@ -2,29 +2,45 @@ body{
   margin: 0%;
 }
 
-#logoAma{
+
+
+
+body{
+    margin: 0%;
+  }
   
-    display: flex;
-    flex-direction:column;
-    width: 7%;
-    justify-content: center;
-    align-items:center;
-    margin: 0 auto;
-    padding: 7px;
-    background-color: #006A4E;
-}
-#usuarioVector{
-    margin-right: 2em;
+  #naveGlobalCont{
+      position: relative;
+      display:inline-block;
+      top: 70%;
+      left: 50%;
+      color: rgb(81, 0, 148);
+      margin-right: 138px;
+      padding: 4% 6%;
+          
+  }
+  #logoAma{
     
-    background-color: #006A4E;
-}
-#naveGlobalCont{
-    position: relative;
-    display: inline;
-    text-align: center;
-    top: 70%;
-    left: 50%;
-}
+      justify-content: center;
+      align-items:center;
+      margin: 0 auto;
+      padding: 7px;
+      background-color: #006A4E;
+      width: 6%; 
+      right: 1em;
+  }
+  #usuarioVector{
+      margin-right: 2em; 
+      background-color: #006A4E;
+      width: 3.5%; 
+  }
+
+
+
+
+
+
+
 #imgH{
     margin:0em;
     justify-content: center;
@@ -44,4 +60,17 @@ body{
     color: ivory;
 }
 
+
+#funciones{
+    margin-top: 70px;
+
+    position: relative;
+    display:inline-block;
+    top: 70%;
+    left: 50%;
+    color: rgb(81, 0, 148);
+    margin-right: 138px;
+    padding: 15% 16%;
+        
+}
 

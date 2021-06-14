@@ -8,14 +8,12 @@
     </head>
 
     <body>
-       <!--navegación global (esto se organiza desps)--> 
-       <div class="naveGlobalCont">
-         <img id="logoAma" src="./img/logo.png " alt=""> 
-       <img id="usuarioVector" src="./img/userP.png " alt="">
-       </div>
-       
-
-      
+      <header class="naveGlobalCont">
+        <div class="logoAma"><img src="./img/logo.png " alt=""> </div>
+     
+        <img id="usuarioVector" src="./img/userP.png " alt="">
+      </header>
+ 
       <link rel="stylesheet" href="css/index.css">
 
      
@@ -24,6 +22,12 @@
         <div class="texto-encima">A.M.A es una red por medio de la cual quienes son amigos del medio ambiente pueden compartir y recibir información sobre las mejores formas en las que pueden ayudar a mantener una ciudad limpia y reducir la contaminación, así mismo, conociendo lugares donde pueden llevar sus residuos y realizar una correcta disposición de ellos. </div>
         
       </div>
+
+      <div class="funciones">
+        <img id="consejosI" src="./img/consejosI.png " alt="">
+        <img id="reportarI" src="./img/reportarI.png " alt="">
+        <img id="mapaI" src="./img/mapaI.png " alt="">
+       </div>
       
 
     </body>
@@ -50,5 +54,5 @@
       firebase.initializeApp(firebaseConfig);
     
     </script>
-    
+    <script src="component/naveGlobal.js"></script>
         <script src="js/index.js"></script>
