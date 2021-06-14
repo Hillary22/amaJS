@@ -2,9 +2,9 @@ const database = firebase.database();
 const auth = firebase.auth();
 const correo = document.getElementById('correo');
 const contraseña = document.getElementById('contraseña');
-const ingrerBtn = document.getElementById('ingreBtn');
+const ingreBtn = document.getElementById('ingreBtn');
 
-ingrerBtn.addEventListener('click', () =>{
+ingreBtn.addEventListener('click', () =>{
 
     auth.signInWithEmailAndPassword(correo.value, contraseña.value).then(
 

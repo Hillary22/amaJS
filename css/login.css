@@ -1,0 +1,38 @@
+body{
+    background-color: #006A4E;
+}
+#logoAma{
+  
+    display: flex;
+    flex-direction:column;
+    width: 12%;
+    justify-content: center;
+    align-items:center;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 80px;
+}
+#loginContainer{
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+#subt{
+    color:ivory;
+    text-align: center;
+    font: 0.8em helvetica;
+}
+
+#logoAma{
+  
+    display: flex;
+    flex-direction:column;
+    width: 12%;
+    justify-content: center;
+    align-items:center;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 80px;
+}
