@@ -1,6 +1,7 @@
 const tituloReport = document.getElementById('tituloReport');
 const textoReport = document.getElementById('textoReport');
 const reportBtn = document.getElementById('reportBtn');
+const ubiReport = document.getElementById('ubiReport');
 const reportContainer = document.getElementById('reportContainer');
 
 const db = firebase.database();
@@ -41,6 +42,7 @@ publiBtn.addEventListener('click', ()=>{
         nombre: nombreReport,
         titulo: tituloReport.value,
         reporte: textoReport.value,
+        location: ubiReport.value,
     };
     referencia.set(r);
 });
