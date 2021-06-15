@@ -1,21 +1,16 @@
 const database = firebase.database();
 const auth = firebase.auth(); 
-const logOut = document.getElementById('logOut'); //es el botón
 
+const logOut = document.getElementById('logOut');
 
-
-logOut.addEventListener('click',()=>{
-
+logOut.addEventListener('click', ()=>{
     auth.signOut().then(
-        ()=>{
-            window.location.href= "login.html";
+        () => {
+            window.location.href = "login.html";
         }
-
     ).catch(
-            (error)=>{
-                alert(error.message);
-            }
-        );
-}
-
-);
+        (error)=>{
+            alert(error.message);
+        }
+    );
+});

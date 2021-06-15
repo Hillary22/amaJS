@@ -21,7 +21,7 @@ auth.onAuthStateChanged(
             }
         ).then(
             (data)=>{
-                window.location.href ="index.html";
+
             }
         );
         

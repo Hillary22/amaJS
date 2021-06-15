@@ -3,27 +3,16 @@ const desLoc = document.getElementById('desLoc');
 const direccionLoc = document.getElementById('direccionLoc');
 const telLoc = document.getElementById('telLoc');
 const horarioLoc = document.getElementById('horarioLoc');
-const addBtn = document.getElementById('addBtn');
-const titulo2Contei = document.getElementById('titulo2Contei');
 
-const db = firebase.database();
+const titulo2Contei = document.getElementById('titulo2Contei');
+const database = firebase.database();
 const auth = firebase.auth();
+const addBtn = document.getElementById('addBtn');
 let nombreEscritor;
 
 //user
-auth.onAuthStateChange(
-    (user)=>{
-        db.ref('users/registrados/'+ user.uid).once(
-            'value',
-            (data)=>{
-                let userDB= data.val();
-                nombreEscritor= userDB.nombre;
-            }
-        );
-
-        db.ref('locaciones').on('value',
+database.ref('locaciones').on('value',
         function(data){
-
             loc=>{
                 let userDB =loc.val();
                 console.log(userDB);
@@ -32,6 +21,16 @@ auth.onAuthStateChange(
             }
         }
         
+        );
+
+auth.onAuthStateChange(
+    (user)=>{
+        db.ref('users/registrados/'+ user.uid).once(
+            'value',
+            (data)=>{
+                let userDB= data.val();
+                nombreEscritor= userDB.nombre;
+            }
         );
     }
 

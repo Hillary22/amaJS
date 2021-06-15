@@ -94,6 +94,10 @@ body {
   .panel input:checked ~ .fa-bars {
     display: none;
   }
+
+  .conscomp {
+    color: #000000;
+  }
    
   /*.******.....MENU f......*****.*/
 
