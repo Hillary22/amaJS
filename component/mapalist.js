@@ -49,9 +49,9 @@ class mapalist{
 
             );
         //Botón
-        let addLocBtn = document.createElement('button');
-        addLocBtn.className = 'addLocBtn';
-        addLocBtn.innerHTML = 'Agregar nuevo punto';
+        let rutaBtn = document.createElement('button');
+        rutaBtn.className = 'rutaBtn';
+        rutaBtn.innerHTML = 'RUTA';
 
 
         component.appendChild(locationCont);
@@ -59,7 +59,7 @@ class mapalist{
         component.appendChild(direCont);
         component.appendChild(teleCont);
         component.appendChild(horaCont);
-        component.appendChild(addLocBtn);
+        component.appendChild(rutaBtn);
 
         const auth = firebase.auth();
         let idUser; 
@@ -76,7 +76,14 @@ class mapalist{
             }
         );
 
-        addLocBtn.addEventListener('click',()=>{
+        rutaBtn.addEventListener('click',()=>{
+
+            const localstorage = window.localStorage;
+            localstorage.setItem('locaciones', json);
+            let json= JSON.stringify(this.location);
+            window.location.href= 'mapa.html';
+            
+            console.log(json);
             const db = firebase.database();
             let map = {
                 
@@ -89,7 +96,7 @@ class mapalist{
                
             
             }
-            db.ref('locaciones/ecoPuntos/'+idUser+'/'+this.location.id).set(map);
+           
         });
 
 

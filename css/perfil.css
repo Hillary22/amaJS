@@ -1,3 +1,10 @@
+body {
+  margin: 0;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    color: #ffffff;
+  }
+
 /*.******.....NAVEGACION GLOBAL......*****.*/
 
 .naveGlobalCont{
@@ -25,10 +32,7 @@
 /*.******.....NAVEGACION GLOBAL......*****.*/
 
 /*.******.....MENU ......*****.*/
-body {
-  margin: 0;
-    font-family: roboto;
-  }
+
   ul{
     display: flex;
     list-style: none;
@@ -91,4 +95,67 @@ body {
     display: none;
   }
    
-  /*.******.....MENU ......*****.*/
+  /*.******.....MENU f......*****.*/
+
+  #perfilCo{
+    margin-top: 4em;
+    background-color: #2E856E;
+    padding-top: 3em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 6em;
+    padding-bottom: 1em;
+
+  }
+  
+  #favCon{
+    margin-top: 4em;
+    margin-left: 6em;
+    
+  }
+
+  #fav{
+  font-size: 20px;
+  color: #006A4E;
+
+  }
+  #nombre{
+    font-size: 30px;
+  }
+  .perfilcomp{
+    background-color: #b8d5cdb6;
+    padding: 12px;
+    margin:15px;
+    max-width:  50em;
+    min-width: 30em;
+ 
+    border-radius: 10px;
+    width: 30%;
+  }
+
+  .eliminarbtn{
+    position: relative;
+    background-color: #006A4E;
+    color: #ffffff;
+    border-radius: 2px;
+    padding: 0.2em 0.2em;
+    border: transparent;
+
+  }
+  .titlecomp{
+    font-weight: 900;
+    color: #006A4E;
+  }
+  
+ #conscomp{
+   border-top: transparent;
+    border-inline:inherit;
+    border-inline-color: #2E856E;
+    padding-inline-end: 3em;
+ }
+ 
+ .nombrecomp{
+ color: #006A4E;
+ text-align: right;
+ padding-right: 1em;
+ }

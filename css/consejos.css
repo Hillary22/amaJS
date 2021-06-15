@@ -131,9 +131,8 @@ padding-right: 1em;
 /*.******.....NAVEGACION GLOBAL......*****.*/
 
 /*.******.....MENU ......*****.*/
-body {
-    font-family: roboto;
-  }
+ 
+ 
   ul{
     display: flex;
     list-style: none;

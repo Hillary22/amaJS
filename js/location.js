@@ -1,4 +1,5 @@
 const database = firebase.database();
+const auth = firebase.auth();
 const addBtn = document.getElementById('addBtn');
 const locationsContainer = document.getElementById('locationsContainer');
 
@@ -12,3 +13,6 @@ database.ref('locaciones/ecoPuntos').on('value', function(data){
         
     });
 });
+
+
+ 
