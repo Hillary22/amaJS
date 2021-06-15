@@ -23,6 +23,7 @@ auth.onAuthStateChanged(
             data.forEach(
                 consejos => {
                     let userDB = consejos.val();
+                    console.log(userDB);
                     let fila = new filaConsejos(userDB);
                     consejosContainer.appendChild(fila.render());
                 }
