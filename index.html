@@ -8,14 +8,40 @@
     </head>
 
     <body>
+       <!-- nav global -->
       <header class="naveGlobalCont">
         
-        <div class="menu"></div> <img src="./img/mh.png " alt="" width="1.5%" height="1.5%"> </div>
-        <div class="logoAma"><img src="./img/logo (1).png " alt="" width="70%" height="70%"> </div>
-        <div class="usuarioVector"></div> <img src="./img/userr.png " alt="" width="3%" height="3%"> </div>
+        <div class="menu"></div> <img src="./img/mh.png " alt="" width="18" height="13"> </div>
+        <div class="logoAma"><img src="./img/logo (1).png " alt="" width="83" height="45"> </div>
+        <button class="logOut">Cerrar sesión</button>
+        <!-- <p><h5 class="logOut"  type="text">Cerrar sesión</p>
+         <div class="usuarioVector"></div> <img src="./img/userr.png " alt="" width="50" height="50"> </div>-->
  
       
       </header>
+
+  <!-- MENU HAMBURGUESA -->
+  
+        <aside class="panel">
+        
+          <input type="checkbox">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-times"></i>
+          <nav>
+            <ul>
+              <li id="mm"><a href="/location.html">Mapa</a></li>
+              <li id="rr"><a href="/reporte.html">Reportar</a></li>
+              <li id="ii"><a href="/index.html">Inicio</a></li>
+              <li id="cc"><a href="/consejos.html">Consejos</a></li>
+              <li id="pp"><a href="/perfil.html">Perfil</a></li>
+            </ul>
+          </nav>
+       
+      </aside>
+
+
+  <!-- TERMINA MENU HAMBURGUESA -->
+
  
       <link rel="stylesheet" href="css/index.css">
 
@@ -27,47 +53,19 @@
       </div>
 
       <div class="funciones">
-        <img id="consejosI" src="./img/consejosI.png " alt="">
-        <img id="reportarI" src="./img/reportarI.png " alt="">
-        <img id="mapaI" src="./img/mapaI.png " alt="">
+        <p><h4 class="F"  type="text">También puedes realizar estas acciones</p>
+        <ul>
+        <li><img id="consejosI" src="./img/consejosI.png " alt="">
+          <p><h5 class="cons"  type="text">Consejos</p></li>
+        <li><img id="reportarI" src="./img/reportarI.png " alt="">
+          <p><h5 class="rep"  type="text">Reportar</p></li>
+        <li> <img id="mapaI" src="./img/mapaI.png " alt="">
+          <p><h5 class="map"  type="text">Mapa</p></li>
+      </ul>
       </div>
       
-      <!-- MENU HAMBURGUESA -->
-       <button class="hamburger hamburger--collapse" type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
-      <aside class="panel">
-        <nav class="menu">
-          <a href="#seccion1">Mapa</a>
-          <a href="#seccion2">Reportar</a>
-          <a href="#seccion3">Inicio</a>
-          <a href="#seccion4">Consejos</a>
-          <a href="#seccion5">Perfil</a>
-  
-        </nav>
-
-            </aside>
-
-            <main>
-              <section id="seccion1" class="section">
-                <h2>Mapa</h2>
-              </section>
-              <section id="seccion2" class="section">
-                <h2>Reportar</h2>
-              </section>
-              <section id="seccion3" class="section">
-                <h2>Inicio</h2>
-              </section>
-              <section id="seccion4" class="section">
-                <h2>Consejos</h2>
-              </section>
-              <section id="seccion5" class="section">
-                <h2>Perfil</h2>
-              </section>
-            </main>
       
+     
 
 
     </body>

@@ -17,24 +17,20 @@ auth.onAuthStateChanged(
             (data)=>{
                 let userDB = data.val();
                 nombreReport = userDB.nombre;
+               
+            }
+        ).then(
+            (data)=>{
+                window.location.href ="index.html";
             }
         );
-        db.ref('reportes').on('value',function(data) {
-            reportContainer.innerHTML = '';
-            data.forEach(
-                report => {
-                    let userDB = report.val();
-                    let fila = new reportesList(userDB);
-                    reportContainer.appendChild(fila.render());
-                }
-            );  
-        } 
-        );
+        
     }
 );
 
 
-publiBtn.addEventListener('click', ()=>{
+reportBtn.addEventListener('click', ()=>{
+    const db = firebase.database();
     let referencia = db.ref('reportes').push();
     let r = {
         
@@ -44,6 +40,8 @@ publiBtn.addEventListener('click', ()=>{
         reporte: textoReport.value,
         location: ubiReport.value,
     };
-    referencia.set(r);
+    
+    db. referencia.set(r);
+   
 });
 
